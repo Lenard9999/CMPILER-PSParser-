@@ -1,0 +1,15 @@
+1 - ACCEPT
+1 + 510 + () - REJECT. Offending Token ')'
+1 ++ 10 - REJECT. Offending Token '+'
+X + y + 1 + 5 - REJECT. Offending Token 'X'
+(5 + 123) + (45 * 643) - ACCEPT
+(15 + 123) + (23 * 43) + [5] - ACCEPT
+(5 - 123) + (45 * 643) + 88 + 66 + [ - REJECT. Offending Token '-'
+13 + 5 + (25 + 10) + 6 - ACCEPT
+8 + 87 + (43 * 6 - REJECT. Missing Token ')'
+(2) * (2) + (2) * (2) - ACCEPT
+(4) + (4) + (3) + (2) + [1] - ACCEPT
+[int * int] - REJECT. Offending Token 'i'
+7,542 + 22,000 - REJECT. Offending Token ','
+62000 * 57000 + (4) - ACCEPT
+9876 + 543 + 21 + 100 - ACCEPT
