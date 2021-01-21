@@ -1,0 +1,25 @@
+start : expr;
+
+expr : paren_expr arithmetic ;
+arithmetic : plus | multi |   ;
+paren_expr : OPEN_PAREN expr CLOSE_PAREN | OPEN_BRACKET expr CLOSE_BRACKET | digit+ arithmetic ;
+plus : PLUS expr ;
+multi : MULTI expr ;
+digit : ZERO | ONE | TWO | THREE | FOUR | FIVE | SIX | SEVEN | EIGHT | NINE ;
+
+OPEN_PAREN : '(' ;
+CLOSE_PAREN : ')' ;
+OPEN_BRACKET : '[' ;
+CLOSE_BRACKET : ']' ;
+PLUS : '+' ;
+MULTI : '*' ;
+ZERO : '0' ;
+ONE : '1' ;
+TWO : '2' ;
+THREE : '3' ;
+FOUR : '4' ;
+FIVE : '5' ;
+SIX : '6' ;
+SEVEN : '7' ;
+EIGHT : '8' ;
+NINE : '9' ;
